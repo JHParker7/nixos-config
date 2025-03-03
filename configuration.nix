@@ -14,7 +14,7 @@
   boot.initrd = {
       luks.devices = {
         luksCrypted = {
-          device = "/dev/nvme0n1p3"; # Replace with your UUID
+          device = "/dev/nvme0n1p2"; # Replace with your UUID
           preLVM = true; # Unlock before activating LVM
           allowDiscards = true; # Allow TRIM commands for SSDs
         };
